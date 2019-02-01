@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  blinkayles-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - PORT=80
+      - SSL_KEY=certs/key.pem
+      - SSL_CERT=certs/cert.pem
+    restart: on-failure
+    ports:
+      - '4567:80'

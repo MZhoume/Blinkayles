@@ -1,0 +1,30 @@
+{
+  "name": "blinkalyes",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node -r ts-node/register src/index.ts",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "class-validator": "^0.9.1",
+    "express": "^4.16.4",
+    "inversify": "^5.0.1",
+    "inversify-express-utils": "^6.3.2",
+    "reflect-metadata": "^0.1.13",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/mocha": "^5.2.5",
+    "@types/shortid": "0.0.29",
+    "mocha": "^5.2.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.2.4"
+  },
+  "private": true
+}
